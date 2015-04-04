@@ -1,11 +1,13 @@
 /*
- * Copyright 2015-2015 Nikos Grammatikos
+ * This is part of GlofalEconomy: https://github.com/nikosgram13/GlofalEconomy
+ *
+ * Copyright 2014-2015 Nikos Grammatikos
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://raw.githubusercontent.com/nikosgram13/GlofalEconomy/master/LICENSE
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
