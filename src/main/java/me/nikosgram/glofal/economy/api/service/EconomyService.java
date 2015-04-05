@@ -24,7 +24,7 @@ public interface EconomyService
 {
     double getBalance( Player player );
 
-    void setBalance( Player player, double balance );
+    void changeBalance( Player player, double balance );
 
     void appendBalance( Player player, double balance );
 
