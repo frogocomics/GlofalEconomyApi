@@ -4,7 +4,7 @@
   <groupId>me.nikosgram</groupId>
   <artifactId>glofal-economy-api</artifactId>
   <name>GlofalEconomy-API</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <developers>
     <developer>
       <id>nikosgram</id>
@@ -35,7 +35,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>${basedir}/src/main/java/</source>
+                <source>${project.basedir}/src/main/java/</source>
               </sources>
             </configuration>
           </execution>
@@ -45,8 +45,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>${javac.version}</source>
+          <target>${javac.version}</target>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
@@ -62,7 +62,7 @@
           </execution>
         </executions>
         <configuration>
-          <finalName>${build.finalName}</finalName>
+          <finalName>${project.build.finalName}</finalName>
         </configuration>
       </plugin>
     </plugins>
@@ -73,7 +73,7 @@
       <snapshots />
       <id>sponge-maven-repo</id>
       <name>Sponge maven repo</name>
-      <url>http://repo.spongepowered.org/maven</url>
+      <url>http://repo.spongepowered.org/maven/</url>
     </repository>
   </repositories>
   <dependencies>
@@ -114,5 +114,10 @@
       </exclusions>
     </dependency>
   </dependencies>
+  <properties>
+    <gson.version>2.3.1</gson.version>
+    <javac.version>1.8</javac.version>
+    <spogeapi.version>1.1-SNAPSHOT</spogeapi.version>
+  </properties>
 </project>
 

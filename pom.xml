@@ -24,11 +24,17 @@
         </developer>
     </developers>
 
+    <properties>
+        <gson.version>2.3.1</gson.version>
+        <javac.version>1.8</javac.version>
+        <spogeapi.version>1.1-SNAPSHOT</spogeapi.version>
+    </properties>
+
     <repositories>
         <repository>
             <id>sponge-maven-repo</id>
             <name>Sponge maven repo</name>
-            <url>http://repo.spongepowered.org/maven</url>
+            <url>http://repo.spongepowered.org/maven/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -42,13 +48,13 @@
         <dependency>
             <groupId>org.spongepowered</groupId>
             <artifactId>spongeapi</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${spogeapi.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.3.1</version>
+            <version>${gson.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -70,7 +76,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>${basedir}/src/main/java/</source>
+                                <source>${project.basedir}/src/main/java/</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -81,8 +87,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${javac.version}</source>
+                    <target>${javac.version}</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -99,7 +105,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <finalName>${build.finalName}</finalName>
+                    <finalName>${project.build.finalName}</finalName>
                 </configuration>
             </plugin>
         </plugins>
