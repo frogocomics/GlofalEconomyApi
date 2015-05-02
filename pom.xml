@@ -27,6 +27,7 @@
     <properties>
         <gson.version>2.3.1</gson.version>
         <javac.version>1.8</javac.version>
+        <snakeyaml.version>1.9</snakeyaml.version>
         <spogeapi.version>2.1-20150421.042532-1</spogeapi.version>
     </properties>
 
@@ -55,6 +56,12 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>${snakeyaml.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
